@@ -13,7 +13,7 @@
       "type": "section-collection",
       "settings": {
         "headline": "Selected products",
-        "collection_featured": "",
+        "collection_featured": "trees",
         "collection_products_limit": "4"
       }
     },
