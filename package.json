@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "tailwind:watch": "npx tailwindcss -i css/application.css -o assets/application.css.liquid --watch",
-    "tailwind:build": "npx tailwindcss -i css/application.css -o assets/application.css.liquid",
+    "tailwind:build": "npx tailwindcss -i css/application.css -o assets/application.css.liquid --minify",
     "start": "run-p -sr shopify:serve tailwind:watch",
     "deploy": "run-s tailwind:build && shopify theme push",
     "deploy:new": "run-s tailwind:build && shopify theme push --unpublished",
@@ -14,6 +14,9 @@
     "shopify:pull": "shopify theme pull"
   },
   "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.4",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.12",
