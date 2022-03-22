@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+*.log
+
+# Ignore Tailwind bundle
+assets/application.css.liquid
