@@ -2,7 +2,10 @@ module.exports = {
   content: ["./**/*.liquid"],
   theme: {
 		container: {
-			center: true
+			center: true,
+			padding: {
+        DEFAULT: '1rem'
+			}
 		},
 		fontFamily: {
 			'sans': ['Necto', 'ui-monospace']
