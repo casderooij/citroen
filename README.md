@@ -8,3 +8,5 @@
 ## Staying up to date with Citroen changes
 - `git fetch upstream`
 - `git pull upstream main`
+
+**Or use simple copy/paste**
