@@ -7,7 +7,6 @@
   "scripts": {
     "tailwind:watch": "npx tailwindcss -i css/application.css -o assets/application.css.liquid --watch",
     "tailwind:build": "npx tailwindcss -i css/application.css -o assets/application.css.liquid --minify",
-		"init:git-remote": "git remote add upstream https://github.com/casderooij/citroen.git",
     "start": "run-p -sr shopify:serve tailwind:watch",
     "deploy": "run-s tailwind:build && shopify theme push",
     "deploy:new": "run-s tailwind:build && shopify theme push --unpublished",
